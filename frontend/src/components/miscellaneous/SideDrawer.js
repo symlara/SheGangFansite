@@ -15,7 +15,7 @@ import { Button,
   DrawerBody,
   Input,
   useToast,
-  Spinner} from '@chakra-ui/react';
+  Spinner, Link} from '@chakra-ui/react';
   import axios from 'axios';
 import { BellIcon, ChevronDownIcon } from '@chakra-ui/icons'
 import NotificationBadge, { Effect } from 'react-notification-badge';
@@ -146,7 +146,7 @@ const toast = useToast();
         </Button>
       </Tooltip>
 
-      <Text color="white" fontSize="2xl">SheGang Chat App</Text>
+      <Text color="white" fontSize="2xl"><Link href="/">SheGang Chat App</Link></Text>
       <div>
         <Menu>
           <MenuButton p={1}>
