@@ -4,9 +4,11 @@
 /node_modules
 /frontend/node_modules
 /frontend/build
-.env
 /.pnp
 .pnp.js
+
+# Secret file
+.env
 
 # testing
 /coverage
