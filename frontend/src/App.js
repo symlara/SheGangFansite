@@ -7,6 +7,9 @@ import Login from './pages/Loginpage';
 import Footer from './components/Footer';
 import Meetups from './pages/meetups/shegang';
 import Updates from './pages/updates/h.e.r.-updates';
+import Advise from './pages/advise/advise';
+import Albums from './pages/albums/albums';
+
 
 
 function App() {
@@ -20,6 +23,8 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path='/meetups/shegang' element={<Meetups />} />
           <Route path='/updates/h.e.r.-updates' element={<Updates />} />
+          <Route path="/advise/advise" element={<Advise />} />
+          <Route path="/albums/albums" element={<Albums />} />
         </Routes>
         <Footer />
         </div>

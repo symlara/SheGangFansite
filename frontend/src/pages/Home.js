@@ -8,6 +8,7 @@ import FeaturedUpdates2 from '../components/FeaturedUpdates2';
 import '../globals.scss';
 import 'tachyons';
 import { Text } from '@chakra-ui/react';
+import Alert from 'react-bootstrap/Alert';
 
 
 const responsive = {
@@ -53,6 +54,13 @@ const Home = () => {
 
   return (
     <div>
+      {[
+        'secondary'
+      ].map((variant) => (
+        <Alert key={variant} variant={variant} style={{color: 'white'}}>
+          Login to gain access to the SheGang Chat dashboard!
+        </Alert>
+      ))}
       <Row>
         <div md={6} className="d-flex flex-direction-column align-items-center justify-content-center">
         <Text color='white' md={6} className='text-white description' style={{ fontSize: '13px'}}>A PLACE FOR ALL H.E.R. FANS TO FIND ALL THINGS H.E.R., <br />SHE GANG ACTIVITIES, SCHOOL AND CAREER RESOURCES, AND A SENSE OF COMMUNITY. </Text>

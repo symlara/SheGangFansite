@@ -2,6 +2,7 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import Button from 'react-bootstrap/Button';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import 'tachyons';
 import { ChatState } from '../context/ChatProvider';
@@ -16,7 +17,7 @@ function Navigation () {
 
 
     return (
-      <Navbar collapseOnSelect expand="lg" variant="dark" style={{backgroundColor: "#000"}}>
+      <Navbar collapseOnSelect expand="lg" variant="dark" style={{backgroundColor: "#000", fontSize: '15px'}}>
         <Container>
           <Navbar.Brand href="/">
           <img className="dib" alt="logo" src={logo} style={{width: 50, height: 50, borderRadius: 8 }}/>
@@ -24,21 +25,23 @@ function Navigation () {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto nav-items">
-              <Nav.Link href="/chats">Dashboard</Nav.Link>
+              {user && (
+                <Nav.Link href="/chats">Dashboard</Nav.Link>
+              )}
               <Nav.Link href="/meetups/shegang">Meetups</Nav.Link>
-              <Nav.Link href="/">Advise</Nav.Link>
+              <Nav.Link href="/advise/advise">Advise</Nav.Link>
             </Nav>
 
              <Nav> 
              {!user && (
-              <a class="f6 dib white bg-animate hover-bg-gray hover-black no-underline pv2 ph4 br-pill ba b--white-20" href="/login">Login/Signup</a>
+              <Button variant="outline-secondary" style={{color: 'white'}} href="/login">Login/Signup</Button>
             )}
              <NavDropdown title="H.E.R." id="collasible-nav-dropdown">
-                <NavDropdown.Item href="/">H.E.R. Updates</NavDropdown.Item>
+                <NavDropdown.Item href="/updates/h.e.r.-updates">H.E.R. Updates</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">
                   
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Albums</NavDropdown.Item>
+                <NavDropdown.Item href="/albums/albums">Albums</NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="#action/3.4">
                   Videos

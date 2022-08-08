@@ -78,7 +78,9 @@ body{
   background: black !important;
 }
 
-
+#login a:hover {
+  background: none !important;
+}
 
 
 
@@ -302,7 +304,7 @@ body{
 }
 
 .app__meetups__blog-container_article {
-  width: 100%;
+  width: 80%;
   height: 300px;
 
   display: flex;
@@ -424,6 +426,15 @@ body{
   margin: 4.5rem;
 }
 
+/* album page styles */
+#streaming a {
+  font-size: 18px;
+}
+
+#albums h1 {
+  font-size: 18px;
+}
+
 
 /* styles for pages on mobile */
 
@@ -515,7 +526,7 @@ body{
 
 .app__meetups__blog-container_groupB {
   padding: 2px;
-  width: 100%;
+  width: 80%;
 }
 
 .app__meetups__blog-container_groupA .app__meetups__blog-container_article-image {
@@ -523,7 +534,7 @@ body{
 }
   
   .app__updates__blog-container_groupA .app__updates__blog-container_article {
-      width:100%;
+      width:80%;
   }
 
   .app__updates__blog-container_groupB {
@@ -543,7 +554,7 @@ body{
 }
 
 .app__meetups__blog-container_groupA .app__meetups__blog-container_article {
-    width: 100%;
+    width: 80%;
 }
 .app__meetups__blog-container_groupA .app__meetups__blog-container_article-image {
     height: 250px;
