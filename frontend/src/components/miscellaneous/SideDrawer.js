@@ -134,7 +134,7 @@ const toast = useToast();
       p="5px 10px 5px 10px"
       borderWidth="1px"
       >
-      <Tooltip label="Search User to chat with">
+      <Tooltip label="Search User to chat with" hasArrow placement="bottom-end">
         <Button variant="ghost" onClick={onOpen}>
           <i className="fas fa-search"></i>
           <Text
