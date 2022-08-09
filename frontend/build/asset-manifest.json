@@ -1,18 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.5ca77d2e.css",
-    "main.js": "/static/js/main.2ca0cd04.js",
+    "main.css": "/static/css/main.aa759267.css",
+    "main.js": "/static/js/main.8b87c9f9.js",
     "static/media/her-returns-to-form-on-her-debut-album-back-of-my-mind.jpg": "/static/media/her-returns-to-form-on-her-debut-album-back-of-my-mind.2c6adf986886bd314092.jpg",
+    "static/media/H.E.R._(2017)_album_cover.jpg": "/static/media/H.E.R._(2017)_album_cover.db92efbf87201981c79e.jpg",
+    "static/media/Back_Of_My_Mind_By_H.E.R.png": "/static/media/Back_Of_My_Mind_By_H.E.R.ebd29e27500a8b5d74f0.png",
     "static/media/shegang.png": "/static/media/shegang.a20a1336c9703d2ddac1.png",
+    "static/media/I_Used_To_Know_Her.jpg": "/static/media/I_Used_To_Know_Her.34bd3079eb2d80fe5253.jpg",
     "static/media/revicons.eot": "/static/media/revicons.a77de540a38981833f9e.eot",
     "static/media/revicons.ttf": "/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/index.html",
-    "main.5ca77d2e.css.map": "/static/css/main.5ca77d2e.css.map",
-    "main.2ca0cd04.js.map": "/static/js/main.2ca0cd04.js.map"
+    "main.aa759267.css.map": "/static/css/main.aa759267.css.map",
+    "main.8b87c9f9.js.map": "/static/js/main.8b87c9f9.js.map"
   },
   "entrypoints": [
-    "static/css/main.5ca77d2e.css",
-    "static/js/main.2ca0cd04.js"
+    "static/css/main.aa759267.css",
+    "static/js/main.8b87c9f9.js"
   ]
 }

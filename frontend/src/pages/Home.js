@@ -64,7 +64,7 @@ const Home = () => {
     <div>
       {!user && (
         <Alert  style={{color: 'white'}}>
-          Login to gain access to the SheGang Chat dashboard!
+          Log in to gain access to the SheGang Chat dashboard!
         </Alert>
       )}
       
