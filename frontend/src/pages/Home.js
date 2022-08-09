@@ -1,14 +1,17 @@
-import React from 'react'
+import React from 'react';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import {Row, Col, Button} from 'react-bootstrap';
-import { LinkContainer } from 'react-router-bootstrap';
+import {Row} from 'react-bootstrap';
 import FeaturedUpdates from '../components/FeaturedUpdates';
 import FeaturedUpdates2 from '../components/FeaturedUpdates2';
 import '../globals.scss';
 import 'tachyons';
 import { Text } from '@chakra-ui/react';
 import Alert from 'react-bootstrap/Alert';
+import { ChatState } from '../context/ChatProvider';
+
+
+
 
 
 const responsive = {
@@ -35,6 +38,11 @@ const responsive = {
 
 
 const Home = () => {
+  const { user } = ChatState();
+
+ 
+
+
   const customleftarrow = (
     <div className="absolute arrow-btn left-0 text-center py-3 cursor-pointer bg-white rounded-full">
       <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-black w-full" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -54,13 +62,18 @@ const Home = () => {
 
   return (
     <div>
-      {[
-        'secondary'
-      ].map((variant) => (
-        <Alert key={variant} variant={variant} style={{color: 'white'}}>
+      {!user && (
+        <Alert  style={{color: 'white'}}>
           Login to gain access to the SheGang Chat dashboard!
         </Alert>
-      ))}
+      )}
+      
+      {/* {[
+        'secondary'
+      ].map((variant) => (
+        
+        
+      ))} */}
       <Row>
         <div md={6} className="d-flex flex-direction-column align-items-center justify-content-center">
         <Text color='white' md={6} className='text-white description' style={{ fontSize: '13px'}}>A PLACE FOR ALL H.E.R. FANS TO FIND ALL THINGS H.E.R., <br />SHE GANG ACTIVITIES, SCHOOL AND CAREER RESOURCES, AND A SENSE OF COMMUNITY. </Text>

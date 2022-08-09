@@ -9,8 +9,8 @@ import Meetups from './pages/meetups/shegang';
 import Updates from './pages/updates/h.e.r.-updates';
 import Advise from './pages/advise/advise';
 import Albums from './pages/albums/albums';
-
-
+import Videos from './pages/videos/videos';
+import Samples from './pages/samples/samples';
 
 function App() {
   return (
@@ -25,6 +25,8 @@ function App() {
           <Route path='/updates/h.e.r.-updates' element={<Updates />} />
           <Route path="/advise/advise" element={<Advise />} />
           <Route path="/albums/albums" element={<Albums />} />
+          <Route path="/videos/videos" element={<Videos />} />
+          <Route path="/samples/samples" element={<Samples />} />
         </Routes>
         <Footer />
         </div>

@@ -44,7 +44,7 @@ const Login = () => {
         );
           // console.log(JSON.stringify(data));
         toast({
-          title: "Login Successful",
+          title: "Login Successful. Click refresh to be redirected to the dashboard",
           status: "success",
           duration: 5000,
           isClosable: true,

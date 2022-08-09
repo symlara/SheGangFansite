@@ -20,7 +20,7 @@ import { Button,
 import { BellIcon, ChevronDownIcon } from '@chakra-ui/icons'
 import NotificationBadge, { Effect } from 'react-notification-badge';
 import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 import { useDisclosure } from '@chakra-ui/hooks';
 import { ChatState } from '../../context/ChatProvider';
 import ProfileModal from './ProfileModal';
@@ -34,7 +34,7 @@ const SideDrawer = () => {
   const [loading, setLoading] = useState(false);
   const [loadingChat, setLoadingChat] = useState();
   
-  let navigate = useNavigate();
+  // let navigate = useNavigate();
 
   const { isOpen, onOpen, onClose } = useDisclosure()
 
@@ -47,10 +47,10 @@ const SideDrawer = () => {
     setNotification } = ChatState();
 
 
-  const logoutHandler = () => {
-    localStorage.removeItem("userInfo");
-    navigate('/');
-  };
+  // const logoutHandler = () => {
+  //   localStorage.removeItem("userInfo");
+  //   navigate('/');
+  // };
 
 const toast = useToast();
 
@@ -190,7 +190,7 @@ const toast = useToast();
             </ProfileModal>
 
             <MenuDivider />
-            <MenuItem onClick={logoutHandler}>Logout</MenuItem>
+            {/* <MenuItem onClick={logoutHandler}>Logout</MenuItem> */}
           </MenuList>
         </Menu>
       </div>

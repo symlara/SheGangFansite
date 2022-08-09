@@ -6,6 +6,11 @@ import Button from 'react-bootstrap/Button';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import 'tachyons';
 import { ChatState } from '../context/ChatProvider';
+import { useToast } from '@chakra-ui/react';
+import { useNavigate } from 'react-router-dom';
+
+
+
 
 
 import logo from '../assets/shegang.png';
@@ -14,7 +19,22 @@ import logo from '../assets/shegang.png';
 function Navigation () {
 
     const { user } = ChatState();
+    let navigate = useNavigate();
 
+    const toast = useToast();
+
+    const logoutHandler = () => {
+      toast({
+        title: "Logout Successful. Click the logo to get back to the site",
+        status: "success",
+        duration: 5000,
+        isClosable: true,
+        position: "bottom",
+      });
+      localStorage.removeItem("userInfo");
+      navigate('/');
+    };
+  
 
     return (
       <Navbar collapseOnSelect expand="lg" variant="dark" style={{backgroundColor: "#000", fontSize: '15px'}}>
@@ -33,6 +53,9 @@ function Navigation () {
             </Nav>
 
              <Nav> 
+              {user && (
+             <Button variant="outline-secondary" style={{color: 'white'}} onClick={logoutHandler}>Logout</Button>
+              )}
              {!user && (
               <Button variant="outline-secondary" style={{color: 'white'}} href="/login">Login/Signup</Button>
             )}
@@ -43,11 +66,11 @@ function Navigation () {
                 </NavDropdown.Item>
                 <NavDropdown.Item href="/albums/albums">Albums</NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">
+                <NavDropdown.Item href="/videos/videos">
                   Videos
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">
+                <NavDropdown.Item href="/samples/samples">
                   Song Samples
                 </NavDropdown.Item>
               </NavDropdown>
