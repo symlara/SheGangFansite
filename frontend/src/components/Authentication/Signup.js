@@ -107,7 +107,7 @@ const Signup = () => {
         config
       );
       toast({
-        title: "Registration Successful",
+        title: "Registration Successful. Click refresh to be redirected to the dashboard",
         status: "success",
         duration: 5000,
         isClosable: true,

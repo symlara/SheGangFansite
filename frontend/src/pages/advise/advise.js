@@ -11,7 +11,7 @@ const Advise = () => {
                 <div className='app__updates__blog-container_groupA'>
                     <div className='app__updates__blog-container_article'>
                         <div className='app__updates__blog-container_article-content'>
-                        <h3>Advice</h3>
+                        <h3>Advise</h3>
                         </div>
                     </div>
                 </div>
