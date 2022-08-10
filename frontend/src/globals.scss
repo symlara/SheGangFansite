@@ -458,6 +458,7 @@ html,body{
 
 .wrapper {
   padding-top: 160px !important;
+  padding-bottom: 240px !important;
   bottom: 0 !important;
   margin: 4.5rem;
 }
@@ -514,7 +515,6 @@ html,body{
   color: var(--secondary-color);
   text-decoration: none;
   padding: 12px;
-  padding-bottom: 10px;
   margin: 0 auto;
 
   &:hover{
@@ -524,6 +524,9 @@ html,body{
   }
 }
 
+.chakra-ui-light{
+  background: #000 !important
+}
 
 /* styles for pages on mobile */
 
