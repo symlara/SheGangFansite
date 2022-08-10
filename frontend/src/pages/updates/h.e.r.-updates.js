@@ -37,6 +37,7 @@ const HERUpdates = () => {
                             <h3>Interviews</h3>
                             <ul>
                                 <a href="https://www.ebony.com/covers/june-cover-her-and-dad-kenny-wilson/" target="_blank" rel="noopener noreferrer"><li className='text-white text-xl'>EBONY Cover Story</li></a>
+                                <br />
                                 <a href="https://www.essence.com/entertainment/exclusive-her-nationwide-campaign/" target="_blank" rel="noopener noreferrer"><li className='text-white text-xl'>Essence</li></a>
                             </ul>
                         </div>

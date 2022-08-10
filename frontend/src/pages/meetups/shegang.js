@@ -25,6 +25,7 @@ const Meetups = () => {
                            <h3>Tour Meet Ups</h3>
                                 <ul>
                                     <a href="https://www.her-official.com/#tour" target="_blank" rel="noopener noreferrer"><li className='text-white text-xl'>BOMM Tour Schedule</li></a>
+                                    <br />
                                     <a href="https://www.coldplay.com/tour/" target="_blank" rel="noopener noreferrer"><li className='text-white text-xl'>World Tour w/ Coldplay</li></a>
                                 </ul>
                         </div>
