@@ -25,7 +25,7 @@ function Navigation () {
 
     const logoutHandler = () => {
       toast({
-        title: "Logout Successful. Click the logo to get back to the site",
+        title: "Logout Successful. Click refresh to hide the Logout button",
         status: "success",
         duration: 5000,
         isClosable: true,
