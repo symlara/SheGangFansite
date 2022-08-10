@@ -72,6 +72,7 @@ const HERUpdates = () => {
                             <h3>Acting Gigs</h3>
                             <ul>
                                 <a href="https://www.hollywoodreporter.com/movies/movie-news/h-e-r-to-make-acting-debut-in-the-color-purple-movie-musical-exclusive-1235004336/" target="_blank" rel="noopener noreferrer"><li className='text-white text-xl'>Acting Debut in ‘The Color Purple’</li></a>
+                                <br />
                                 <a href="https://insidethemagic.net/2022/07/her-belle-beauty-and-the-beast-special-th1/" target="_blank" rel="noopener noreferrer"><li className='text-white text-xl'>H.E.R. Cast as Disney Princess Belle For New ‘Beauty and the Beast’ Movie</li></a>
                             </ul>
                         
