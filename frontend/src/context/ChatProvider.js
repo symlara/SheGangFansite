@@ -3,8 +3,8 @@ import { Navigate } from "react-router-dom";
 
 const ChatContext = createContext();
 
-export function ChatProvider ({ children }) {
-    const [user, setUser] = useState({});
+const ChatProvider = ({ children }) => {
+    const [user, setUser] = useState();
     const [selectedChat, setSelectedChat] = useState();
     const [chats, setChats] = useState([]);
     const [notification, setNotification] = useState([]);
@@ -17,7 +17,6 @@ export function ChatProvider ({ children }) {
 
         if(!userInfo){
             // history.push('/');
-
             <Navigate to="/" replace={true} />
         }
         // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -39,7 +38,7 @@ export function ChatProvider ({ children }) {
     )
 };
 
-export function ChatState () {
+export const ChatState = () => {
     return useContext(ChatContext);
   };
 

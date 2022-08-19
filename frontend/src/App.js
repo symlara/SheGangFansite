@@ -12,7 +12,7 @@ import Albums from './pages/albums/albums';
 import Videos from './pages/videos/videos';
 import Samples from './pages/samples/samples';
 import ChatProvider from './context/ChatProvider';
-import ProtectedRoute from './components/ProtectedRoute';
+// import ProtectedRoute from './components/ProtectedRoute';
 
 function App() {
   return (
@@ -22,14 +22,7 @@ function App() {
           <Navigation />
           <Routes>
             <Route path="/" element={<Home />}/>
-            <Route 
-              path="/chats" 
-              element={
-                <ProtectedRoute>
-                  <Chat />
-                 </ProtectedRoute> 
-              }
-             />
+            <Route path="/chats" element={<Chat />}/>
             <Route path="/login" element={<Login />} />
             <Route path='/meetups/shegang' element={<Meetups />} />
             <Route path='/updates/h.e.r.-updates' element={<Updates />} />
