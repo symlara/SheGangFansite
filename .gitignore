@@ -8,6 +8,9 @@
 
 # Secret file
 .env
+.env.production
+.env.development
+
 
 # testing
 /coverage
